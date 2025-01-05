@@ -79,15 +79,15 @@ UICorner_4.Parent = f
 
 -- Scripts:
 
-local function EQSNNW_fake_script() -- ws.LocalScript 
+local function COXO_fake_script() -- ws.LocalScript 
 	local script = Instance.new('LocalScript', ws)
 
 	script.Parent.Activated:Connect(function() 
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/angamer234k/chillpanelrbx/refs/heads/main/walkspeed.lua",false))()
+		loadstring(game.HttpService:GetAsync("https://raw.githubusercontent.com/angamer234k/chillpanelrbx/refs/heads/main/walkspeed.lua",false))()
 	end)		
 end
-coroutine.wrap(EQSNNW_fake_script)()
-local function WBLTDB_fake_script() -- Frame.wah 
+coroutine.wrap(COXO_fake_script)()
+local function VTSHRVW_fake_script() -- Frame.wah 
 	local script = Instance.new('LocalScript', Frame)
 
 	-- Shout out to domboss37 for drag script
@@ -145,18 +145,13 @@ local function WBLTDB_fake_script() -- Frame.wah
 		end
 	end)
 end
-coroutine.wrap(WBLTDB_fake_script)()
-local function RTYZAL_fake_script() -- f.LocalScript 
+coroutine.wrap(VTSHRVW_fake_script)()
+local function YLTPYAM_fake_script() -- f.LocalScript 
 	local script = Instance.new('LocalScript', f)
 
 	script.Parent.Activated:Connect(function() 
-		local plr = game.Players.LocalPlayer
-		local char = plr.Character
-		for _,v in ipairs(char:GetChildren()) do
-			if v:IsA("Part") then
-				v.CustomPhysicalProperties = PhysicalProperties.new(100,0,0)
-			end
-		end
+		-- ty danyad22
+		loadstring(game.HttpService:GetAsync("https://raw.githubusercontent.com/danyad22/Fling/refs/heads/main/main.lua",false))()
 	end)		
 end
-coroutine.wrap(RTYZAL_fake_script)()
+coroutine.wrap(YLTPYAM_fake_script)()
