@@ -43,6 +43,8 @@ local function ODOGPQK_fake_script() -- wait_load.LocalScript
 		UIGradient.Rotation = -109
 		UIGradient.Parent = TextLabel
 		repeat task.wait() until game:IsLoaded()
+		TextLabel.Text = "Game loaded! Loading main gui now."
+		wait(1)
 		TextLabel:Destroy()
 	end
 end
