@@ -1,5 +1,4 @@
--- Gui to Lua
--- Version: 3.2
+
 
 -- Instances:
 
@@ -16,6 +15,8 @@ local UICorner_4 = Instance.new("UICorner")
 local cs = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
 local UIGradient_2 = Instance.new("UIGradient")
+local e = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
 
 --Properties:
 
@@ -86,7 +87,7 @@ cs.Parent = Frame
 cs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 cs.BorderColor3 = Color3.fromRGB(0, 0, 0)
 cs.BorderSizePixel = 0
-cs.Position = UDim2.new(0.0635962784, 0, 0.604955256, 0)
+cs.Position = UDim2.new(0.0635962933, 0, 0.829035342, 0)
 cs.Size = UDim2.new(0.875391126, 0, 0.100000009, 0)
 cs.Font = Enum.Font.Ubuntu
 cs.Text = "Custom admin :O"
@@ -101,17 +102,31 @@ UICorner_5.Parent = cs
 UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(0.22, Color3.fromRGB(121, 0, 137)), ColorSequenceKeypoint.new(0.48, Color3.fromRGB(0, 255, 247)), ColorSequenceKeypoint.new(0.84, Color3.fromRGB(164, 173, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 0))}
 UIGradient_2.Parent = cs
 
+e.Name = "e"
+e.Parent = Frame
+e.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+e.BorderColor3 = Color3.fromRGB(0, 0, 0)
+e.BorderSizePixel = 0
+e.Position = UDim2.new(0.0635962933, 0, 0.591374636, 0)
+e.Size = UDim2.new(0.875391126, 0, 0.100000009, 0)
+e.Font = Enum.Font.Ubuntu
+e.Text = "ESP"
+e.TextColor3 = Color3.fromRGB(0, 0, 0)
+e.TextSize = 14.000
+
+UICorner_6.Parent = e
+
 -- Scripts:
 
-local function NCJUDN_fake_script() -- ws.LocalScript 
+local function PYLQTB_fake_script() -- ws.LocalScript 
 	local script = Instance.new('LocalScript', ws)
 
 	script.Parent.Activated:Connect(function() 
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/angamer234k/chillpanelrbx/refs/heads/main/walkspeed.lua",false))()
 	end)		
 end
-coroutine.wrap(NCJUDN_fake_script)()
-local function NKINXX_fake_script() -- Frame.wah 
+coroutine.wrap(PYLQTB_fake_script)()
+local function BXSVHM_fake_script() -- Frame.wah 
 	local script = Instance.new('LocalScript', Frame)
 
 	-- Shout out to domboss37 for drag script
@@ -169,8 +184,8 @@ local function NKINXX_fake_script() -- Frame.wah
 		end
 	end)
 end
-coroutine.wrap(NKINXX_fake_script)()
-local function YVTT_fake_script() -- f.LocalScript 
+coroutine.wrap(BXSVHM_fake_script)()
+local function JKYS_fake_script() -- f.LocalScript 
 	local script = Instance.new('LocalScript', f)
 
 	script.Parent.Activated:Connect(function() 
@@ -178,12 +193,25 @@ local function YVTT_fake_script() -- f.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/danyad22/Fling/refs/heads/main/main.lua",false))()
 	end)		
 end
-coroutine.wrap(YVTT_fake_script)()
-local function TOCPM_fake_script() -- cs.LocalScript 
+coroutine.wrap(JKYS_fake_script)()
+local function UGGII_fake_script() -- cs.LocalScript 
 	local script = Instance.new('LocalScript', cs)
 
 	script.Parent.Activated:Connect(function() 
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/angamer234k/chillpanelrbx/refs/heads/main/custom_admin.lua",false))()
 	end)		
 end
-coroutine.wrap(TOCPM_fake_script)()
+coroutine.wrap(UGGII_fake_script)()
+local function AVHKZ_fake_script() -- e.LocalScript 
+	local script = Instance.new('LocalScript', e)
+
+	script.Parent.Activated:Connect(function() 
+		for _,v in ipairs(game.Players:GetChildren()) do
+			if v =~ game.Players.LocalPlayer then
+				local char = v.Character
+				Instance.new("Highlight",char).FillColor = Color3.new(1, 1, 1)
+			end
+		end
+	end)		
+end
+coroutine.wrap(AVHKZ_fake_script)()
