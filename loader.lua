@@ -3,7 +3,7 @@
 
 -- Instances:
 
-local ScreenGui = Instance.new("ScreenGui")
+local wah = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local UIGradient = Instance.new("UIGradient")
@@ -13,14 +13,18 @@ local ws = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
 local f = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
+local cs = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local UIGradient_2 = Instance.new("UIGradient")
 
 --Properties:
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-ScreenGui.ResetOnSpawn = false
+wah.Name = "wah"
+wah.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+wah.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+wah.ResetOnSpawn = false
 
-Frame.Parent = ScreenGui
+Frame.Parent = wah
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
@@ -77,17 +81,37 @@ f.TextSize = 14.000
 
 UICorner_4.Parent = f
 
+cs.Name = "cs"
+cs.Parent = Frame
+cs.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+cs.BorderColor3 = Color3.fromRGB(0, 0, 0)
+cs.BorderSizePixel = 0
+cs.Position = UDim2.new(0.0635962784, 0, 0.604955256, 0)
+cs.Size = UDim2.new(0.875391126, 0, 0.100000009, 0)
+cs.Font = Enum.Font.Ubuntu
+cs.Text = "Custom admin :O"
+cs.TextColor3 = Color3.fromRGB(255, 255, 255)
+cs.TextSize = 18.000
+cs.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+cs.TextStrokeTransparency = -0.080
+cs.TextWrapped = true
+
+UICorner_5.Parent = cs
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 4)), ColorSequenceKeypoint.new(0.22, Color3.fromRGB(121, 0, 137)), ColorSequenceKeypoint.new(0.48, Color3.fromRGB(0, 255, 247)), ColorSequenceKeypoint.new(0.84, Color3.fromRGB(164, 173, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 0))}
+UIGradient_2.Parent = cs
+
 -- Scripts:
 
-local function COXO_fake_script() -- ws.LocalScript 
+local function NCJUDN_fake_script() -- ws.LocalScript 
 	local script = Instance.new('LocalScript', ws)
 
 	script.Parent.Activated:Connect(function() 
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/angamer234k/chillpanelrbx/refs/heads/main/walkspeed.lua",false))()
 	end)		
 end
-coroutine.wrap(COXO_fake_script)()
-local function VTSHRVW_fake_script() -- Frame.wah 
+coroutine.wrap(NCJUDN_fake_script)()
+local function NKINXX_fake_script() -- Frame.wah 
 	local script = Instance.new('LocalScript', Frame)
 
 	-- Shout out to domboss37 for drag script
@@ -145,8 +169,8 @@ local function VTSHRVW_fake_script() -- Frame.wah
 		end
 	end)
 end
-coroutine.wrap(VTSHRVW_fake_script)()
-local function YLTPYAM_fake_script() -- f.LocalScript 
+coroutine.wrap(NKINXX_fake_script)()
+local function YVTT_fake_script() -- f.LocalScript 
 	local script = Instance.new('LocalScript', f)
 
 	script.Parent.Activated:Connect(function() 
@@ -154,4 +178,12 @@ local function YLTPYAM_fake_script() -- f.LocalScript
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/danyad22/Fling/refs/heads/main/main.lua",false))()
 	end)		
 end
-coroutine.wrap(YLTPYAM_fake_script)()
+coroutine.wrap(YVTT_fake_script)()
+local function TOCPM_fake_script() -- cs.LocalScript 
+	local script = Instance.new('LocalScript', cs)
+
+	script.Parent.Activated:Connect(function() 
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/angamer234k/chillpanelrbx/refs/heads/main/custom_admin.lua",false))()
+	end)		
+end
+coroutine.wrap(TOCPM_fake_script)()
