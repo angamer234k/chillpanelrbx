@@ -13,7 +13,7 @@ wait_load.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 -- Scripts:
 
-local function ODOGPQK_fake_script() -- wait_load.LocalScript 
+local function MPJVS_fake_script() -- wait_load.LocalScript 
 	local script = Instance.new('LocalScript', wait_load)
 
 	if not game:IsLoaded() then
@@ -43,9 +43,9 @@ local function ODOGPQK_fake_script() -- wait_load.LocalScript
 		UIGradient.Rotation = -109
 		UIGradient.Parent = TextLabel
 		repeat task.wait() until game:IsLoaded()
-		TextLabel.Text = "Game loaded! Loading main gui now."
 		wait(1)
 		TextLabel:Destroy()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/angamer234k/chillpanelrbx/refs/heads/main/main_gui.lua",false))
 	end
 end
-coroutine.wrap(ODOGPQK_fake_script)()
+coroutine.wrap(MPJVS_fake_script)()
