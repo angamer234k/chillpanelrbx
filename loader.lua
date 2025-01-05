@@ -83,7 +83,7 @@ local function COXO_fake_script() -- ws.LocalScript
 	local script = Instance.new('LocalScript', ws)
 
 	script.Parent.Activated:Connect(function() 
-		loadstring(game.HttpService:GetAsync("https://raw.githubusercontent.com/angamer234k/chillpanelrbx/refs/heads/main/walkspeed.lua",false))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/angamer234k/chillpanelrbx/refs/heads/main/walkspeed.lua",false))()
 	end)		
 end
 coroutine.wrap(COXO_fake_script)()
@@ -151,7 +151,7 @@ local function YLTPYAM_fake_script() -- f.LocalScript
 
 	script.Parent.Activated:Connect(function() 
 		-- ty danyad22
-		loadstring(game.HttpService:GetAsync("https://raw.githubusercontent.com/danyad22/Fling/refs/heads/main/main.lua",false))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/danyad22/Fling/refs/heads/main/main.lua",false))()
 	end)		
 end
 coroutine.wrap(YLTPYAM_fake_script)()
