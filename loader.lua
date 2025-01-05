@@ -11,6 +11,8 @@ local title = Instance.new("TextLabel")
 local UICorner_2 = Instance.new("UICorner")
 local ws = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
+local f = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
 
 --Properties:
 
@@ -61,17 +63,31 @@ ws.TextSize = 14.000
 
 UICorner_3.Parent = ws
 
+f.Name = "f"
+f.Parent = Frame
+f.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+f.BorderColor3 = Color3.fromRGB(0, 0, 0)
+f.BorderSizePixel = 0
+f.Position = UDim2.new(0.0635963157, 0, 0.401246071, 0)
+f.Size = UDim2.new(0.875391126, 0, 0.100000009, 0)
+f.Font = Enum.Font.Ubuntu
+f.Text = "Fling"
+f.TextColor3 = Color3.fromRGB(0, 0, 0)
+f.TextSize = 14.000
+
+UICorner_4.Parent = f
+
 -- Scripts:
 
-local function HOKUN_fake_script() -- ws.LocalScript 
+local function EQSNNW_fake_script() -- ws.LocalScript 
 	local script = Instance.new('LocalScript', ws)
 
 	script.Parent.Activated:Connect(function() 
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/angamer234k/chillpanelrbx/refs/heads/main/walkspeed.lua",false))()
 	end)		
 end
-coroutine.wrap(HOKUN_fake_script)()
-local function FJJOY_fake_script() -- Frame.wah 
+coroutine.wrap(EQSNNW_fake_script)()
+local function WBLTDB_fake_script() -- Frame.wah 
 	local script = Instance.new('LocalScript', Frame)
 
 	-- Shout out to domboss37 for drag script
@@ -129,4 +145,18 @@ local function FJJOY_fake_script() -- Frame.wah
 		end
 	end)
 end
-coroutine.wrap(FJJOY_fake_script)()
+coroutine.wrap(WBLTDB_fake_script)()
+local function RTYZAL_fake_script() -- f.LocalScript 
+	local script = Instance.new('LocalScript', f)
+
+	script.Parent.Activated:Connect(function() 
+		local plr = game.Players.LocalPlayer
+		local char = plr.Character
+		for _,v in ipairs(char:GetChildren()) do
+			if v:IsA("Part") then
+				v.CustomPhysicalProperties = PhysicalProperties.new(100,0,0)
+			end
+		end
+	end)		
+end
+coroutine.wrap(RTYZAL_fake_script)()
