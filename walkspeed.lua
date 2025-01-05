@@ -12,6 +12,7 @@ local wuh = Instance.new("TextBox")
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
 
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -49,7 +50,7 @@ wuh.TextWrapped = true
 
 -- Scripts:
 
-local function ROHV_fake_script() -- wuh.LocalScript 
+local function ZURG_fake_script() -- wuh.LocalScript 
 	local script = Instance.new('LocalScript', wuh)
 
 	script.Parent.FocusLost:Connect(function(enterPressed: boolean) 
@@ -60,8 +61,8 @@ local function ROHV_fake_script() -- wuh.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ROHV_fake_script)()
-local function JAACOIM_fake_script() -- Frame.LocalScript 
+coroutine.wrap(ZURG_fake_script)()
+local function FMTWG_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	--// Services
@@ -118,4 +119,4 @@ local function JAACOIM_fake_script() -- Frame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(JAACOIM_fake_script)()
+coroutine.wrap(FMTWG_fake_script)()
