@@ -207,7 +207,7 @@ local function AVHKZ_fake_script() -- e.LocalScript
 
 	script.Parent.Activated:Connect(function() 
 		for _,v in ipairs(game.Players:GetChildren()) do
-			if v =~ game.Players.LocalPlayer then
+			if not v == game.Players.LocalPlayer then
 				local char = v.Character
 				Instance.new("Highlight",char).FillColor = Color3.new(1, 1, 1)
 			end
